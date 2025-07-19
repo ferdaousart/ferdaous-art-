@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Art Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #444;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .art-piece {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .art-piece img {
+      max-width: 100%;
+      height: auto;
+    }
+    .art-piece h3 {
+      margin: 10px 0 5px;
+    }
+    .art-piece p {
+      margin: 0 0 10px;
+    }
+    .price {
+      font-weight: bold;
+      color: #333;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Art Gallery</h1>
+    <p>Original Paintings for Sale</p>
+  </header>
+
+  <nav>
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="gallery" class="gallery">
+    <div class="art-piece">
+      <img src="art1.jpg" alt="Painting 1" />
+      <h3>Sunset Dreams</h3>
+      <p>Oil on canvas, 60x40cm</p>
+      <p class="price">$300</p>
+    </div>
+    <div class="art-piece">
+      <img src="art2.jpg" alt="Painting 2" />
+      <h3>Mountain View</h3>
+      <p>Acrylic on canvas, 70x50cm</p>
+      <p class="price">$450</p>
+    </div>
+    <!-- Add more artwork entries here -->
+  </section>
+
+  <section id="about" style="padding: 20px; background: #fff;">
+    <h2>About the Artist</h2>
+    <p>Hello! I'm a passionate painter who loves capturing nature and emotions through color and texture. Each piece is crafted with love and inspiration from my surroundings.</p>
+  </section>
+
+  <section id="contact" style="padding: 20px; background: #eaeaea;">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+    <p>Follow me on Instagram: <a href="https://instagram.com/yourhandle" target="_blank">@yourhandle</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Art Gallery</p>
+  </footer>
+</body>
+</html>
